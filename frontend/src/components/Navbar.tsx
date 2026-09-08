@@ -11,9 +11,7 @@ const navLinks = [
   { href: "/#programs", label: "Programs" },
   { href: "/#research", label: "Research & Labs" },
   { href: "/apply", label: "Admissions" },
-  { href: "/#industry", label: "Industry" },
-  { href: "/blog", label: "News & Events" },
-  { href: "/#about", label: "About" }
+  { href: "/blog", label: "News & Events" }
 ];
 
 export default function Navbar() {
@@ -67,12 +65,6 @@ export default function Navbar() {
                     {link.label}
                   </Link>
                 ))}
-                <Link
-                  href="/apply"
-                  className="neo-btn-primary btn-glow gold-shimmer rounded-full px-5 py-2 text-[10px] font-semibold uppercase tracking-[0.2em] transition hover:shadow-glow"
-                >
-                  Request Information
-                </Link>
               </nav>
 
               <div className="flex items-center gap-2 md:hidden">
