@@ -1,6 +1,6 @@
 ﻿import Link from "next/link";
 import Image from "next/image";
-import { Instagram, Linkedin, Youtube } from "lucide-react";
+import { BriefcaseBusiness, Camera, Play } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -23,13 +23,13 @@ export default function Footer() {
             </p>
             <div className="mt-4 flex items-center gap-3 text-moonInk/70">
               <Link href="#" aria-label="LinkedIn" className="rounded-full border border-moonBorder/70 p-2 hover:text-moonGreen">
-                <Linkedin size={18} />
+                <BriefcaseBusiness size={18} />
               </Link>
               <Link href="#" aria-label="Instagram" className="rounded-full border border-moonBorder/70 p-2 hover:text-moonGreen">
-                <Instagram size={18} />
+                <Camera size={18} />
               </Link>
               <Link href="#" aria-label="YouTube" className="rounded-full border border-moonBorder/70 p-2 hover:text-moonGreen">
-                <Youtube size={18} />
+                <Play size={18} />
               </Link>
             </div>
           </div>
