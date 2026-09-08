@@ -1,7 +1,7 @@
-﻿import Link from "next/link";
-import { ArrowRight, BadgeCheck, BriefcaseBusiness, Sparkles } from "lucide-react";
+﻿import { BadgeCheck, BriefcaseBusiness, Sparkles } from "lucide-react";
 import PageReveal from "@/components/PageReveal";
 import SectionHeading from "@/components/SectionHeading";
+import ConsultationForm from "@/components/ConsultationForm";
 
 const highlights = [
   "Technology and design strategy support",
@@ -50,46 +50,7 @@ export default function ApplyPage() {
             </article>
           </aside>
 
-          <form className="glass-panel grid gap-4 p-6 md:grid-cols-2 md:p-8">
-            <div>
-              <label htmlFor="full_name" className="mb-1 block text-xs font-semibold uppercase tracking-wider text-moonInk/65">Full Name</label>
-              <input id="full_name" required name="full_name" placeholder="Your full name" className="w-full rounded-xl px-3 py-2 outline-none focus:border-moonGreen" />
-            </div>
-
-            <div>
-              <label htmlFor="organization" className="mb-1 block text-xs font-semibold uppercase tracking-wider text-moonInk/65">Organization</label>
-              <input id="organization" required name="organization" placeholder="Company or team" className="w-full rounded-xl px-3 py-2 outline-none focus:border-moonGreen" />
-            </div>
-
-            <div className="md:col-span-2">
-              <label htmlFor="project_type" className="mb-1 block text-xs font-semibold uppercase tracking-wider text-moonInk/65">Service Interest</label>
-              <input id="project_type" name="project_type" placeholder="Example: Web app development, research support, UI/UX design" className="w-full rounded-xl px-3 py-2 outline-none focus:border-moonGreen" />
-            </div>
-
-            <div>
-              <label htmlFor="email" className="mb-1 block text-xs font-semibold uppercase tracking-wider text-moonInk/65">Email</label>
-              <input id="email" required name="email" type="email" placeholder="you@example.com" className="w-full rounded-xl px-3 py-2 outline-none focus:border-moonGreen" />
-            </div>
-
-            <div>
-              <label htmlFor="phone" className="mb-1 block text-xs font-semibold uppercase tracking-wider text-moonInk/65">Phone</label>
-              <input id="phone" required name="phone" placeholder="Phone number" className="w-full rounded-xl px-3 py-2 outline-none focus:border-moonGreen" />
-            </div>
-
-            <div className="md:col-span-2">
-              <label htmlFor="notes" className="mb-1 block text-xs font-semibold uppercase tracking-wider text-moonInk/65">Project Details</label>
-              <textarea id="notes" name="notes" placeholder="Tell us about your goals, timeline, and current requirements" className="min-h-[120px] w-full rounded-xl px-3 py-2 outline-none focus:border-moonGreen" />
-            </div>
-
-            <div className="md:col-span-2 flex flex-col items-start gap-4 sm:flex-row sm:items-center sm:justify-between">
-              <button className="neo-btn-primary btn-glow shine-on-hover rounded-full px-5 py-3 text-sm font-semibold">
-                Submit Request
-              </button>
-              <Link href="/#contact" className="inline-flex items-center gap-2 text-sm font-semibold text-moonInk hover:text-moonGreen">
-                Contact directly <ArrowRight size={16} />
-              </Link>
-            </div>
-          </form>
+          <ConsultationForm />
         </div>
       </section>
     </PageReveal>
